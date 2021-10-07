@@ -18,7 +18,7 @@ Pensando que o projeto não está completamente seguro, passasse a utilizar a no
 
 ## 📖 Para saber mais sobre esta camada acesse:
 
-1.  [BasicSecurityConfig](https://github.com/r4skaren/Blog-Pessoal/new/main/spring/blogPessoal/src/main/java/org/generation/blogPessoal/security#-basicsecurityconfig-)
+1.  [BasicSecurityConfig](https://github.com/r4skaren/Blog-Pessoal/new/main/spring/blogPessoal/src/main/java/org/generation/blogPessoal/security#-basicsecurityconfig-)<br>
     1.1. [UserDetailsImpl]()<br>
     1.2. [UserDetailsServiceImpl]()<br>
    
