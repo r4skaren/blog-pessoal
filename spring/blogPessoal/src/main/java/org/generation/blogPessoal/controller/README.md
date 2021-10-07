@@ -10,7 +10,7 @@
   
 
 <br>
-A camada controller de forma resumida tem controle sobre as requisições feitas de fora da APi, a partir dai:
+A camada controller de forma resumida tem controle sobre as requisições feitas de fora da API, a partir dai:
 <br>
 <br>
 
