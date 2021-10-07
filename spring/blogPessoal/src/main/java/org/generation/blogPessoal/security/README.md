@@ -10,7 +10,7 @@
   
 
 <br>
-Pensando que o projeto não está completamente seguro, passasse a utilizar a nova depedência Spring Security
+Pensando que o projeto não está completamente seguro, passasse a utilizar a nova depedência Spring Security.
 <br>
 <br>
 
@@ -34,7 +34,7 @@ Pensando que o projeto não está completamente seguro, passasse a utilizar a no
 <h1 align="CENTER"> BasicSecurityConfig </h1>
   
 ### :memo: Descrição
-Sring Security é um framework para tornar a parte de autenticação e autorização algo simples de fazer.
+Uma classe de configuração, configura o tipo de criptografia que será utilizada na senha, qual o tipo de segurança que utilizaremos, e também quais End Point’s que serão liberados para que usuário possa acessar
 
 <br>
   
