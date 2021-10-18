@@ -13,14 +13,16 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModelProperty;
+
 
 @Entity
 @Table(name = "tb_usuarios")
-public class Usuario {
+public class Usuario {  
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,8 +31,9 @@ public class Usuario {
 	@NotBlank(message = "O atributo nome é obrigatório")
 	private String nome;
 	
-	@Email(message = "É necessário um email válido.")
-	@NotBlank(message = "O atributo usuário é obrigatório")
+	@ApiModelProperty(example = "email@email.com.br")
+	@NotNull(message = "O atributo Usuário é Obrigatório!")
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
 	
 	@NotBlank(message = "O atributo senha é obrigatório")
@@ -39,7 +42,7 @@ public class Usuario {
 	
 	@Column(name = "dt_nascimento")
 	@JsonFormat(pattern="yyyy-MM-dd")
-    @NotBlank(message = "O atributo Data de Nascimento é Obrigatório!")
+    //@NotBlank(message = "O atributo Data de Nascimento é Obrigatório!")
     private LocalDate dataNascimento;
 	
 	@OneToMany (mappedBy = "usuario", cascade = CascadeType.REMOVE)

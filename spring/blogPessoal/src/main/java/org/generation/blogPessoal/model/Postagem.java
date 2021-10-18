@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity //indica essa classe vai ser uma entidade do jpa //vai virar uma tabela
-@Table(name = "postagem") //como vai ser nomeada
+@Table(name = "tb_postagem") //como vai ser nomeada
 
 //anotações = parametros colocados a cima das classes e definem um comportamento
 public class Postagem {
