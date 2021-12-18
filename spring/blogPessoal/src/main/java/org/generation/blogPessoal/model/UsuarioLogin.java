@@ -51,4 +51,7 @@ public class UsuarioLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+    public void setFoto(String foto) {
+    }
 }

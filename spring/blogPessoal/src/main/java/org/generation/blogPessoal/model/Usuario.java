@@ -44,7 +44,11 @@ public class Usuario {
 	@JsonFormat(pattern="yyyy-MM-dd")
     //@NotBlank(message = "O atributo Data de Nascimento é Obrigatório!")
     private LocalDate dataNascimento;
-	
+
+	private String foto;
+
+	private String tipo; 
+
 	@OneToMany (mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List <Postagem> postagem;
@@ -112,5 +116,20 @@ public class Usuario {
 		this.postagem = postagem;
 	}
 
+	public String getFoto() {
+		return this.foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return this.tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 }
 
